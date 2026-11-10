@@ -1,0 +1,7 @@
+ http://localhost:5173/
+
+ cd D:\AsGGBoy\Docu\hero-program
+
+npm install
+
+npm run dev
