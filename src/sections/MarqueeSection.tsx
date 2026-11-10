@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 
 // Use generated timeline images, cycling through 18 images
-const allImages: string[] = Array.from({ length: 18 }, (_, i) => `/images/${i + 1}.png`);
+const allImages: string[] = Array.from({ length: 18 }, (_, i) => `${import.meta.env.BASE_URL}images/${i + 1}.png`);
 const row1Seeds: string[] = allImages.slice(0, 11);
 const row2Seeds: string[] = allImages.slice(11).concat(allImages.slice(0, 3));
 

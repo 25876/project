@@ -35,7 +35,7 @@ const HeroSection = () => {
       {/* Portrait — 不参与布料形变 */}
       <FadeIn delay={0.6} y={30} className="pointer-events-none absolute left-1/2 top-1/2 z-0 -translate-x-1/2 -translate-y-1/2">
         <img
-          src="/images/5.png"
+          src={`${import.meta.env.BASE_URL}images/5.png`}
           alt="portrait"
           loading="lazy"
           className="h-[42vh] w-auto rounded-2xl object-cover object-top opacity-90 sm:h-[52vh]"

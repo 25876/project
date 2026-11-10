@@ -10,9 +10,11 @@ interface Project {
   col2Img: string;
 }
 
+const img = (n: number) => `${import.meta.env.BASE_URL}images/${n}.png`;
+
 const projects: Project[] = [
-  { num: '01', name: '前端学习之路', col1Img1: '/images/1.png', col1Img2: '/images/3.png', col2Img: '/images/6.png' },
-  { num: '02', name: '实践与成长', col1Img1: '/images/10.png', col1Img2: '/images/11.png', col2Img: '/images/18.png' },
+  { num: '01', name: '前端学习之路', col1Img1: img(1), col1Img2: img(3), col2Img: img(6) },
+  { num: '02', name: '实践与成长', col1Img1: img(10), col1Img2: img(11), col2Img: img(18) },
 ];
 
 interface ProjectCardProps {
